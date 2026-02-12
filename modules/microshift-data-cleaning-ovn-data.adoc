@@ -6,6 +6,7 @@
 [id="microshift-data-cleaning-ovn-data_{context}"]
 = Cleaning the OVN-Kubernetes data
 
+[role="_abstract"]
 You can clean up the OVN-Kubernetes (ONV-K) data by running the `microshift-cleanup-data` script. Use the script to reset OVN-K network configurations.
 
 When you run the script with the `--ovn` argument, you perform the following clean up actions:

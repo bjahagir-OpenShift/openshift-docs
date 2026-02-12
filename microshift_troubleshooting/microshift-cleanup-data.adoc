@@ -6,6 +6,7 @@ include::_attributes/attributes-microshift.adoc[]
 
 toc::[]
 
+[role="_abstract"]
 {microshift-short} provides the `microshift-cleanup-data` script for various troubleshooting tasks, such as deleting all data, certificates, and container images.
 
 [WARNING]

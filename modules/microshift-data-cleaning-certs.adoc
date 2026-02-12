@@ -6,6 +6,7 @@
 [id="microshift-data-cleaning-certs_{context}"]
 = Cleaning custom certificates data
 
+[role="_abstract"]
 You can use the `microshift-cleanup-data` script to reset {microshift-short} custom certificates so that they are recreated when the {microshift-short} service restarts.
 
 When you run the script with the `--cert` argument, you perform the following clean up actions:

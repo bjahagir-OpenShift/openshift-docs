@@ -6,6 +6,7 @@ include::_attributes/attributes-microshift.adoc[]
 
 toc::[]
 
+[role="_abstract"]
 To troubleshoot etcd and improve performance, configure the memory allowance for the service.
 
 include::modules/microshift-config-etcd.adoc[leveloffset=+1]

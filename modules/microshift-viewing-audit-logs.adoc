@@ -6,6 +6,7 @@
 [id="microshift-security-context-constraints-alert-eval_{context}"]
 = Identifying pod security violations through audit logs
 
+[role="_abstract"]
 You can identify pod security admission violations on a workload by viewing the server audit logs. The following procedure shows you how to access the audit logs and parse them to find pod security admission violations in a workload.
 
 .Prerequisites

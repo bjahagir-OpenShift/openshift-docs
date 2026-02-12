@@ -6,6 +6,7 @@
 [id="microshift-data-cleaning-overview_{context}"]
 = Data cleanup script overview
 
+[role="_abstract"]
 You can see the usage and list available options of the `microshift-cleanup-data` script by running the script without arguments. Running the script without arguments does not delete any data or stop the {microshift-short} service.
 
 .Procedure
