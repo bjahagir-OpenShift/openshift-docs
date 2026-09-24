@@ -409,8 +409,8 @@ Topics:
     File: installing-with-agent-basic
   - Name: Installing a cluster with customizations
     File: installing-with-agent-based-installer
-  - Name: Installing a cluster without an external registry
-    File: installing-ove
+  # - Name: Installing a cluster without an external registry
+  #   File: installing-ove
   - Name: Preparing PXE assets for OCP
     File: prepare-pxe-assets-agent
   - Name: Preparing installation assets for iSCSI booting
@@ -3537,6 +3537,9 @@ Topics:
   File: cnf-understanding-low-latency
 - Name: Tuning nodes for low latency with the performance profile
   File: cnf-tuning-low-latency-nodes-with-perf-profile
+- Name: Reserving CPUs for OVS-DPDK
+  File: cnf-reserving-cpus-for-ovs-dpdk
+  Distros: openshift-origin,openshift-enterprise
 - Name: Tuning hosted control planes for low latency with the performance profile
   File: cnf-tuning-low-latency-hosted-cp-nodes-with-perf-profile
 - Name: Provisioning real-time and low latency workloads
@@ -4942,35 +4945,25 @@ Topics:
   Topics:
   # Web console procedures (unified wizard — CNV-94223, CNV-94224, CNV-94225, CNV-94226)
   # Uncomment when CNV-94227 cleanup is complete:
-  #- Name: Create virtual machines by using the web console
-  #  File: virt-creating-vms-web
+  - Name: Create virtual machines by using the web console
+    File: virt-creating-vms-web
   # CLI procedures (existing content, moved from Chapter 8)
   - Name: Creating virtual machines by using the CLI
     File: virt-creating-vms-from-cli
-  - Name: Creating VMs by importing images from web pages
-    File: virt-creating-vms-from-web-images
-  - Name: Creating VMs by uploading images
-    File: virt-creating-vms-uploading-images
-  - Name: Creating VMs by using container disks
-    File: virt-creating-vms-from-container-disks
-  - Name: Creating VMs by cloning PVCs
-    File: virt-creating-vms-by-cloning-pvcs
   # Platform-specific
   - Name: Configuring IBM Secure Execution virtual machines on IBM Z and IBM LinuxONE
     File: virt-configuring-ibm-secure-execution-vms-ibm-z
   - Name: Creating AWS EC2 Windows License Included (LI) compliant VMs
     File: virt-creating-vms-aws-li-windows
   # Legacy (preserved until Phase 3 cleanup — CNV-94227)
-  - Name: Creating VMs from instance types
+  - Name: Instance types
     File: virt-creating-vms-from-instance-types
-  - Name: Creating VMs from templates
+  - Name: Managing VM templates
     File: virt-creating-vms-from-templates
-  - Name: Creating virtual machines from Red Hat images
+  - Name: Managing boot sources
     File: virt-creating-vms-from-rh-images-overview
   - Name: Import a virtual machine image using the DataVolume API
     File: virt-import-dv-vms
-  - Name: Cloning VMs
-    File: virt-cloning-vms
 - Name: Managing VMs
   Dir: managing_vms
   Topics:
@@ -5017,8 +5010,8 @@ Topics:
     File: virt-using-vtpm-devices
   - Name: Managing virtual machines with OpenShift Pipelines
     File: virt-managing-vms-openshift-pipelines
-  - Name: Migrating VMs in a single cluster to a different storage class
-    File: virt-migrating-vms-in-single-cluster-to-different-storage-class
+  - Name: Migrating VM storage
+    File: virt-migrating-vm-storage
   - Name: Advanced virtual machine management
     Dir: advanced_vm_management
     Topics:
