@@ -128,10 +128,13 @@ Topics:
   File: index
 - Name: Creating a mirror registry with mirror registry for Red Hat OpenShift
   File: installing-mirroring-creating-registry
-- Name: Mirroring images for a disconnected installation using oc-mirror plugin v2
-  File: about-installing-oc-mirror-v2
-- Name: Migrating from oc-mirror plugin v1 to v2
-  File: oc-mirror-migration-v1-to-v2
+- Name: Mirroring images by using oc-mirror plugin
+  Dir: oc_mirror_v2
+  Topics:
+  - Name: Mirroring images for a disconnected installation by using the oc-mirror plugin v2
+    File: about-installing-oc-mirror-v2
+  - Name: Migrating from oc-mirror plugin v1 to v2
+    File: oc-mirror-migration-v1-to-v2
 - Name: Mirroring images for a disconnected installation by using the oc adm command
   File: installing-mirroring-installation-images
 - Name: Installing a cluster in a disconnected environment
@@ -333,6 +336,8 @@ Topics:
     File: installing-gcp-shared-vpc
   - Name: Installing a private cluster on Google Cloud
     File: installing-gcp-private
+  - Name: Installing a cluster on Google Cloud Dedicated
+    File: installing-gcp-dedicated
   - Name: Installing a cluster on Google Cloud using Infrastructure Manager templates
     File: installing-gcp-user-infra
   - Name: Installing a cluster into a shared VPC on Google Cloud using Infrastructure Manager templates
@@ -447,6 +452,8 @@ Topics:
       File: operating-a-degraded-tnf
     - Name: Post-installation troubleshooting and recovery
       File: install-post-tnf
+    - Name: Tuning the fencing parameters for a two-node OpenShift cluster with fencing
+      File: tuning-fencing-parameters-tnf
 - Name: Installing on bare metal
   Dir: installing_bare_metal
   Distros: openshift-origin,openshift-enterprise
@@ -1880,9 +1887,9 @@ Topics:
     Dir: configuring_gateway_api
     Distros: openshift-enterprise,openshift-origin
     Topics:
-    - Name: Understand Gateway API
+    - Name: Understanding Gateway API
       File: understand-gateway-api
-    - Name: Enable Gateway API
+    - Name: Enabling Gateway API
       File: enable-gateway-api
     - Name: Controlling incoming traffic with Gateway listeners
       File: controlling-incoming-traffic-gateway-listeners
@@ -1890,10 +1897,10 @@ Topics:
       File: assigning-network-addresses-gateways
     - Name: Routing HTTP requests to services
       File: routing-http-requests-to-services
-    - Name: Securing HTTPRoutes
-      File: securing-httproutes
     - Name: Routing gRPC requests to services
       File: routing-grpc-requests-to-services
+    - Name: Securing HTTPRoutes
+      File: securing-httproutes
     - Name: Verifying Gateway infrastructure status
       File: verifying-gateway-infrastructure-status
   - Name: Load balancing on OpenStack
