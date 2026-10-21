@@ -1,0 +1,12 @@
+// Module included in the following maps:
+//
+// * maps/virt-jobs/optimize-vm-compute-resources.adoc
+
+:_mod-docs-content-type: CONCEPT
+[id="virt-optimize-vm-compute-resources_{context}"]
+= Optimize VM compute resources
+
+[role="_abstract"]
+Tune CPU and memory allocation for virtual machine (VM) workloads based on the requirements of your environment.
+
+Dedicated CPUs and huge pages reduce latency for an individual VM. Non-uniform memory access (NUMA) alignment keeps the CPUs and memory of a VM in the same zone. If instead you require a greater number of VMs per node, you can overcommit memory and provision swap resources to avoid adding hardware.

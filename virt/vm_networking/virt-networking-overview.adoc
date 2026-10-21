@@ -31,7 +31,7 @@ When deploying VM networks on public clouds, you can choose from the following s
 * Primary layer 2 user-defined network (UDN): This is the preferred approach. It provides a flat layer 2 network for VMs, sticky IP addresses, and direct east-west connectivity.
 * Secondary layer 2 network attachment definition (NAD): This approach provides an isolated layer 2 overlay network to connect VMs on different nodes, without configuring any additional physical networking infrastructure.
 
-For the default pod network and the primary user-defined network, egress traffic relies on Network Address Translation (NAT). Ingress traffic requires load balancer services integrated with the cloud provider's native load balancers. 
+For the default pod network and the primary user-defined network, egress traffic relies on Network Address Translation (NAT). Ingress traffic requires load balancer services integrated with the cloud provider's native load balancers.
 
 The layer 2 secondary network does not provide external ingress or egress routing.
 ====
@@ -46,10 +46,9 @@ image:darkcircle-7.png[20,20] Secondary VM networks are typically bridged direct
 
 [IMPORTANT]
 ====
-The following features are not supported on {product-rosa}, {azure-first}, {product-dedicated}, {gcp-first}, and {oci-first}:
+The following features are not supported on public clouds:
 
 * Connecting VMs directly to the underlay network
-* Using Border Gateway Protocol (BGP) to allow direct routing to VMs
 * Using Ethernet Virtual Private Network (EVPN) with BGP to extend layer 2 connectivity for primary cluster-scoped UDNs
 ====
 
@@ -76,6 +75,7 @@ include::modules/virt-nw-overview-vm-ssh-config.adoc[leveloffset=+1]
 [id="additional-resources_{context}"]
 == Additional resources
 * xref:../../virt/vm_networking/virt-connecting-vm-to-default-pod-network.adoc#virt-connecting-vm-to-default-pod-network[Connect a virtual machine to the default pod network]
+* xref:../../virt/creating_vm/virt-creating-vms-web.adoc#virt-vm-configuring-default-network-per-project_virt-creating-vms-web[Configuring project-level default networks]
 * xref:../../virt/vm_networking/virt-connecting-vm-to-primary-udn.adoc#virt-connecting-vm-to-primary-udn[Connect a virtual machine to a custom primary overlay network]
 ifndef::openshift-dedicated[]
 * xref:../../virt/vm_networking/virt-connecting-vm-to-ovn-secondary-network.adoc#virt-connecting-vm-to-ovn-secondary-network[Connect a VM to a custom secondary overlay network]

@@ -1,8 +1,16 @@
 :_mod-docs-content-type: MAP
 :context: configure-nutanix-failure-domains
 
+// This job covers the whole Nutanix failure domain path, install-time and
+// post-install, for both control plane and compute machines. The control plane
+// modules below also appear in spread-the-control-plane-across-failure-domains.adoc,
+// which lists all six providers the control plane machine set supports. The
+// two job maps use different contexts, so the generated ids stay distinct.
+
 // Decomposed from installing/installing_nutanix/nutanix-failure-domains.adoc
-include::modules/installation-nutanix-failure-domains-req.adoc[leveloffset=+0]
+include::modules/configure-nutanix-failure-domains-intro.adoc[leveloffset=+0]
+
+include::modules/installation-nutanix-failure-domains-req.adoc[leveloffset=+1]
 
 // Decomposed from installing/installing_nutanix/nutanix-failure-domains.adoc
 include::modules/post-installation-configuring-nutanix-failure-domains.adoc[leveloffset=+1]

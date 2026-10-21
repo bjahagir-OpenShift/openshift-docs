@@ -1,0 +1,11 @@
+:_mod-docs-content-type: MAP
+:context: rosa-hcp-manage-your-red-hat-openshift-services-on-aws-govcloud-account
+
+// Manage your Red Hat OpenShift Service on AWS GovCloud account
+include::modules/manage-your-red-hat-openshift-services-on-aws-govcloud-account.adoc[leveloffset=+0,chunk="to-content"]
+
+// Change your FedRamp account password
+include::modules/rosa-govcloud-manage-fedramp.adoc[leveloffset=+1,toc="no"]
+
+// Open a support ticket
+include::modules/rosa-govcloud-support-ticket.adoc[leveloffset=+1,toc="no"]

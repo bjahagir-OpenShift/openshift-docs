@@ -2,6 +2,53 @@
 
 = Troubleshoot
 
+// Moved from install.adoc
+include::ocp-jobs/troubleshoot-installation-issues.adoc[leveloffset=+1]
+
+include::ocp-jobs/allow-the-configuration-drift-to-remain-and-return-the-node-to-ready-state.adoc[leveloffset=+1]
+
+include::ocp-jobs/escalate-an-unresolved-issue-to-red-hat.adoc[leveloffset=+1]
+
+include::ocp-jobs/incident-investigation-71-compare-traffic-patterns-before-and-during-incident.adoc[leveloffset=+1]
+
+include::ocp-jobs/remediate-node-configuration-drift-to-return-the-node-to-ready.adoc[leveloffset=+1]
+
+include::ocp-jobs/gather-information-and-debugging-data-for-windows.adoc[leveloffset=+1]
+
+include::ocp-jobs/restart-hosted-control-plane-components-and-pause-reconciliation.adoc[leveloffset=+1]
+
+include::ocp-jobs/troubleshoot-hosted-clusters-internal-subnets.adoc[leveloffset=+1]
+
+include::ocp-jobs/gather-data-to-troubleshoot-hosted-clusters.adoc[leveloffset=+1]
+
+include::ocp-jobs/troubleshoot-hosted-clusters-by-platform-troubleshoot-hosted-clusters-on-bare-metal.adoc[leveloffset=+1]
+
+include::ocp-jobs/troubleshoot-hosted-clusters-by-platform-troubleshoot-hosted-clusters-on-ibmz.adoc[leveloffset=+1]
+
+include::ocp-jobs/troubleshoot-hosted-clusters-by-platform-troubleshoot-hosted-clusters-on-openshift-virtualization.adoc[leveloffset=+1]
+
+include::ocp-jobs/recover-unhealthy-etcd-cluster-for-hosted-control-planes.adoc[leveloffset=+1]
+
+include::ocp-jobs/backup-and-restore-etcd-on-a-hosted-cluster.adoc[leveloffset=+1]
+
+include::ocp-jobs/backup-and-restore-etcd-on-management-cluster.adoc[leveloffset=+1]
+
+include::ocp-jobs/backup-etcd-data-for-hosted-control-planes-using-etcd-snapshot.adoc[leveloffset=+1]
+
+include::ocp-jobs/backup-and-restore-hosted-cluster-on-openshift-virtualization.adoc[leveloffset=+1]
+
+include::ocp-jobs/high-availability-and-disaster-recovery-for-hosted-control-planes.adoc[leveloffset=+1]
+
+include::ocp-jobs/disaster-recovery-for-hosted-control-planes-on-aws.adoc[leveloffset=+1]
+
+include::ocp-jobs/disaster-recovery-for-hosted-control-planes-on-azure.adoc[leveloffset=+1]
+
+include::ocp-jobs/backup-and-restore-for-hosted-control-planes-on-azure.adoc[leveloffset=+1]
+
+include::ocp-jobs/disaster-recovery-for-hosted-control-planes-using-oadp.adoc[leveloffset=+1]
+
+include::ocp-jobs/automated-disaster-recovery-for-hosted-control-planes-using-oadp.adoc[leveloffset=+1]
+
 include::ocp-jobs/troubleshoot-node-performance-issues.adoc[leveloffset=+1]
 
 include::ocp-jobs/connectivity-troubleshooting.adoc[leveloffset=+1]
@@ -10,13 +57,13 @@ include::ocp-jobs/incident-investigation.adoc[leveloffset=+1]
 
 include::ocp-jobs/troubleshoot-containers.adoc[leveloffset=+1]
 
-include::ocp-jobs/backup-and-restore-etcd-data.adoc[leveloffset=+1]
+include::ocp-jobs/troubleshoot-containers-investigate-pod-issues.adoc[leveloffset=+1]
 
-include::ocp-jobs/control-plane-disaster-recovery.adoc[leveloffset=+1]
+include::ocp-jobs/troubleshoot-containers-troubleshoot-crio-issues.adoc[leveloffset=+1]
 
 include::ocp-jobs/troubleshoot-network-issues.adoc[leveloffset=+1]
 
-include::ocp-jobs/replace-unhealthy-etcd-members.adoc[leveloffset=+1]
+include::ocp-jobs/troubleshoot-network-issues-diagnose-node-networking-and-ovs.adoc[leveloffset=+1]
 
 include::ocp-jobs/view-cluster-events.adoc[leveloffset=+1]
 
@@ -24,25 +71,19 @@ include::ocp-jobs/detect-and-resolve-node-issues.adoc[leveloffset=+1]
 
 include::ocp-jobs/copy-files-to-or-from-containers.adoc[leveloffset=+1]
 
+include::ocp-jobs/run-a-command-in-a-container.adoc[leveloffset=+1]
+
 include::ocp-jobs/replace-failed-bare-metal-control-plane-nodes-without-bmc-credentials.adoc[leveloffset=+1]
 
 include::ocp-jobs/troubleshoot-extension-installation.adoc[leveloffset=+1]
+
+include::ocp-jobs/troubleshoot-source-to-image-builds.adoc[leveloffset=+1]
 
 include::ocp-jobs/evaluate-pod-health.adoc[leveloffset=+1]
 
 include::ocp-jobs/defragment-etcd-data.adoc[leveloffset=+1]
 
-include::ocp-jobs/troubleshoot-common-update-failures.adoc[leveloffset=+1]
-
-include::ocp-jobs/use-the-vsphere-problem-detector-operator.adoc[leveloffset=+1]
-
 include::ocp-jobs/move-etcd-to-a-different-disk.adoc[leveloffset=+1]
-
-include::ocp-jobs/gather-data-about-a-cluster-update.adoc[leveloffset=+1]
-
-include::ocp-jobs/high-availability-and-disaster-recovery-for-hosted-control-planes.adoc[leveloffset=+1]
-
-include::ocp-jobs/gather-information-and-debugging-data-for-a-hosted-cluster.adoc[leveloffset=+1]
 
 include::ocp-jobs/troubleshoot-connectivity-and-internal-subnets.adoc[leveloffset=+1]
 
@@ -56,31 +97,28 @@ include::ocp-jobs/troubleshoot-web-terminal-startup-failures.adoc[leveloffset=+1
 
 include::ocp-jobs/troubleshoot-node-performance-issues-collect-node-profiling-data.adoc[leveloffset=+1]
 
-include::ocp-jobs/troubleshoot-network-issues-1362-execute-localized-network-diagnostics-using-the-oc-netobserv-cli.adoc[leveloffset=+1]
-
-include::ocp-jobs/troubleshoot-network-issues-132-troubleshoot-network-policies.adoc[leveloffset=+1]
+// Moved to networking.adoc
+//include::ocp-jobs/troubleshoot-network-issues-1362-execute-localized-network-diagnostics-using-the-oc-netobserv-cli.adoc[leveloffset=+1]
 
 include::ocp-jobs/troubleshoot-network-issues-133-troubleshoot-ingress-and-routes.adoc[leveloffset=+1]
 
-include::ocp-jobs/troubleshoot-network-issues-136-diagnose-network-flow-issues-netobserv.adoc[leveloffset=+1]
+// Moved to networking.adoc
+//include::ocp-jobs/troubleshoot-network-issues-136-diagnose-network-flow-issues-netobserv.adoc[leveloffset=+1]
 
 include::ocp-jobs/troubleshoot-network-issues-131-access-cluster-nodes-for-diagnostics.adoc[leveloffset=+1]
 
-include::ocp-jobs/troubleshoot-network-issues-134-troubleshoot-operators.adoc[leveloffset=+1]
+include::ocp-jobs/troubleshoot-ovn-kubernetes-networking-issues.adoc[leveloffset=+1]
 
 include::ocp-jobs/troubleshoot-network-issues-135-trace-openflow-with-ovnkube-trace.adoc[leveloffset=+1]
 
-include::ocp-jobs/troubleshoot-network-issues-1361-investigate-packet-drops-netobserv.adoc[leveloffset=+1]
+// Moved to networking.adoc
+//include::ocp-jobs/troubleshoot-network-issues-1361-investigate-packet-drops-netobserv.adoc[leveloffset=+1]
 
 include::ocp-jobs/configure-and-maintain-the-pod-network-cni-225-diagnose-and-resolve-node-network-configuration-errors.adoc[leveloffset=+1]
 
-include::ocp-jobs/high-availability-and-disaster-recovery-for-hosted-control-planes-recover-an-unhealthy-etcd-cluster.adoc[leveloffset=+1]
-
-include::ocp-jobs/high-availability-and-disaster-recovery-for-hosted-control-planes-back-up-and-restore-etcd-and-hosted-clusters.adoc[leveloffset=+1]
-
-include::ocp-jobs/high-availability-and-disaster-recovery-for-hosted-control-planes-automated-disaster-recovery-for-a-hosted-cluster-by-using-oadp.adoc[leveloffset=+1]
-
 include::ocp-jobs/manage-kernel-modules-across-cluster-nodes-troubleshoot-kernel-module-loading-issues.adoc[leveloffset=+1]
+
+include::ocp-jobs/troubleshoot-operating-system-issues.adoc[leveloffset=+1]
 
 include::ocp-jobs/connectivity-troubleshooting-11-diagnose-failed-connections-between-pods-and-services.adoc[leveloffset=+1]
 
@@ -110,19 +148,15 @@ include::ocp-jobs/investigate-an-active-cluster-issue-extract-diagnostic-data-us
 
 include::ocp-jobs/investigate-an-active-cluster-issue-collect-comprehensive-data-for-vendor-support.adoc[leveloffset=+1]
 
+include::ocp-jobs/investigate-an-active-cluster-issue-collect-host-sosreports-and-journal-logs.adoc[leveloffset=+1]
+
+include::ocp-jobs/investigate-an-active-cluster-issue-capture-network-traces-for-support.adoc[leveloffset=+1]
+
+include::ocp-jobs/investigate-an-active-cluster-issue-use-host-toolbox-for-diagnostics.adoc[leveloffset=+1]
+
 include::ocp-jobs/investigate-an-active-cluster-issue-summarize-cluster-specifications.adoc[leveloffset=+1]
 
 include::ocp-jobs/defragment-etcd-data-automatically-defragment-etcd-data.adoc[leveloffset=+1]
-
-include::ocp-jobs/defragment-etcd-data-manually-defragment-etcd-data.adoc[leveloffset=+1]
-
-include::ocp-jobs/etcd-best-practices-back-up-etcd-data.adoc[leveloffset=+1]
-
-include::ocp-jobs/etcd-best-practices-create-single-automatic-etcd-backup.adoc[leveloffset=+1]
-
-include::ocp-jobs/etcd-best-practices-create-recurring-automatic-etcd-backup.adoc[leveloffset=+1]
-
-include::ocp-jobs/etcd-best-practices-restore-etcd-data.adoc[leveloffset=+1]
 
 include::ocp-jobs/monitor-control-plane-nodes-identify-an-unhealthy-etcd-member.adoc[leveloffset=+1]
 
@@ -130,11 +164,14 @@ include::ocp-jobs/monitor-control-plane-nodes-determine-state-of-an-unhealthy-et
 
 include::ocp-jobs/monitor-control-plane-nodes-replace-unhealthy-etcd-member.adoc[leveloffset=+1]
 
-include::ocp-jobs/encrypt-etcd-quorum-restoration-for-high-availability-clusters.adoc[leveloffset=+1]
-
-include::ocp-jobs/encrypt-etcd-restore-to-a-previous-cluster-state.adoc[leveloffset=+1]
-
 include::ocp-jobs/encrypt-etcd-recover-from-expired-control-plane-certificates.adoc[leveloffset=+1]
 
 include::ocp-jobs/encrypt-etcd-test-restore-procedures.adoc[leveloffset=+1]
 
+include::ocp-jobs/troubleshoot-clusters-that-use-the-cluster-api.adoc[leveloffset=+1]
+
+include::ocp-jobs/troubleshoot-the-control-plane-machine-set.adoc[leveloffset=+1]
+
+include::ocp-jobs/collect-console-logs-from-machines-that-fail-to-boot.adoc[leveloffset=+1]
+
+include::ocp-jobs/troubleshoot-storage.adoc[leveloffset=+1]

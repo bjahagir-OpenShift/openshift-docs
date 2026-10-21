@@ -10,7 +10,7 @@ endif::[]
 
 :_mod-docs-content-type: PROCEDURE
 [id="images-configuration-registry-mirror-configuring_{context}"]
-= Configuring image registry repository mirroring
+= Configure image registry repository mirroring
 
 [role="_abstract"]
 You can create postinstallation mirror configuration custom resources (CR) to redirect image pull requests from a source image registry to a mirrored image registry.
@@ -184,12 +184,12 @@ $ oc get node
 [source,terminal]
 ----
 NAME                           STATUS                     ROLES    AGE  VERSION
-worker-1.compute.local         Ready                      worker   7m   v1.35.4
-master-1.compute.local         Ready                      master   11m  v1.35.4
-master-2.compute.local         Ready                      master   11m  v1.35.4
-worker-2.compute.local         Ready                      worker   7m   v1.35.4
-worker-3.compute.local         Ready                      worker   7m   v1.35.4
-master-3.compute.local         Ready                      master   11m  v1.35.4
+worker-1.compute.local         Ready                      worker   7m   v1.36.3
+master-1.compute.local         Ready                      master   11m  v1.36.3
+master-2.compute.local         Ready                      master   11m  v1.36.3
+worker-2.compute.local         Ready                      worker   7m   v1.36.3
+worker-3.compute.local         Ready                      worker   7m   v1.36.3
+master-3.compute.local         Ready                      master   11m  v1.36.3
 ----
 
 .. Start the debugging process to access the node:
@@ -359,8 +359,16 @@ sh-4.2# podman pull --log-level=debug registry.access.redhat.com/ubi9/ubi-minima
 
 If the repository mirroring procedure does not work as described, use the following information about how repository mirroring works to help troubleshoot the problem:
 
+ifndef::winc[]
+* The first mirror that can serve the manifest supplies the manifest. If that mirror cannot serve a layer, the node tries the next configured mirror for that layer.
+* If every configured mirror fails, the node contacts the source registry by default, unless the `mirrorSourcePolicy.NeverContactSource` parameter is set in the `ImageDigestMirrorSet` or `ImageTagMirrorSet` CR. By default, the `mirrorSourcePolicy` parameter is set to `AllowContactingSource`, which enables the fall back behavior upon failure. 
+* If the connection drops after a layer download has started, the node retries that same mirror for the remainder of the download.
+* A failed pull lists each mirror that the node tried and the reason that mirror failed.
+endif::winc[]
+ifdef::winc[]
 * The first working mirror is used to supply the pulled image.
 * The main registry is only used if no other mirror works.
+endif::winc[]
 * From the system context, the `Insecure` flags are used as fallback.
 ifndef::winc[]
 * The format of the `/etc/containers/registries.conf` file has changed recently. It is now version 2 and in TOML format.

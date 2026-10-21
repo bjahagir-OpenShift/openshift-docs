@@ -1,0 +1,24 @@
+:_mod-docs-content-type: MAP
+:context: troubleshoot-hosted-clusters-by-platform-troubleshoot-hosted-clusters-on-openshift-virtualization
+
+
+include::modules/hcp-ts-ocp-virt.adoc[leveloffset=+0]
+
+include::modules/hcp-ts-hc-stuck.adoc[leveloffset=+1]
+
+include::modules/hcp-ts-no-nodes-reg.adoc[leveloffset=+1]
+
+include::modules/hcp-ts-nodes-stuck.adoc[leveloffset=+1]
+
+include::modules/hcp-ts-ingress-not-online.adoc[leveloffset=+1]
+
+include::modules/hcp-ts-load-balancer-svcs.adoc[leveloffset=+1]
+
+include::modules/hcp-ts-pvcs-not-avail.adoc[leveloffset=+1]
+
+include::modules/hcp-ts-vm-nodes.adoc[leveloffset=+1]
+
+include::modules/hcp-ts-rhcos.adoc[leveloffset=+1]
+
+include::modules/hcp-ts-non-bm.adoc[leveloffset=+1]
+

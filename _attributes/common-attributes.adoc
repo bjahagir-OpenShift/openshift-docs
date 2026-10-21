@@ -3,6 +3,7 @@
 // {product-title} and {product-version} are parsed when AsciiBinder queries the _distro_map.yml file in relation to the base branch of a pull request.
 // See https://github.com/openshift/openshift-docs/blob/main/contributing_to_docs/doc_guidelines.adoc#product-name-and-version for more information on this topic.
 // Other common attributes are defined in the following lines:
+:OCP: OpenShift Container Platform
 :data-uri:
 :icons:
 :experimental:
@@ -11,7 +12,7 @@
 :imagesdir: images
 :prewrap!:
 // n-1 and n+1 OCP versions relative to the current branch's {product-version} attr
-:ocp-nminus1: 4.21
+:ocp-nminus1: 4.22
 :ocp-nplus1: 4.23
 // Operating system attributes
 :op-system-first: Red{nbsp}Hat Enterprise Linux CoreOS (RHCOS)
@@ -123,9 +124,9 @@ endif::[]
 :opp: OpenShift Platform Plus
 //openshift virtualization (cnv)
 :VirtProductName: OpenShift Virtualization
-:VirtVersion: 4.22
-:HCOVersion: 4.22.0
-:HCOVersionPrev: 4.21.0
+:VirtVersion: 5.0
+:HCOVersion: 5.0.0
+:HCOVersionPrev: 4.22.0
 :HCOCliKind: hco
 :CNVNamespace: openshift-cnv
 :CNVOperatorDisplayName: OpenShift Virtualization Operator
@@ -437,4 +438,4 @@ endif::openshift-origin[]
 :attribute-based-short: Attribute-Based GPU Allocation
 //Support log gather operator
 :support-log-gather: Support Log Gather
-:bmaas-first: Red{nbsp}Hat Bare Metal as a Service for OpenShift
+:bmaas-first: Red{nbsp}Hat Bare-Metal-as-a-Service for OpenShift

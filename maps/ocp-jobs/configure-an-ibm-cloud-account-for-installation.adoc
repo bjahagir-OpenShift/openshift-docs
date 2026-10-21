@@ -2,7 +2,9 @@
 :context: configure-an-ibm-cloud-account-for-installation
 
 // Decomposed from installing/installing_ibm_cloud/installing-ibm-cloud-account.adoc
-include::modules/quotas-and-limits-ibm-cloud.adoc[leveloffset=+0]
+include::modules/configure-an-ibm-cloud-account-for-installation-intro.adoc[leveloffset=+0]
+
+include::modules/quotas-and-limits-ibm-cloud.adoc[leveloffset=+1]
 
 // Decomposed from installing/installing_ibm_cloud/installing-ibm-cloud-account.adoc
 include::modules/installation-ibm-cloud-dns-resolution-concept.adoc[leveloffset=+1]
@@ -23,12 +25,4 @@ include::modules/installation-ibm-cloud-creating-api-key.adoc[leveloffset=+2]
 // so that the ifeval block in installation-ibm-cloud-regions.adoc fires
 :context: installing-ibm-cloud-account
 include::modules/installation-ibm-cloud-regions.adoc[leveloffset=+1]
-:context: configure-an-ibm-cloud-account-for-installation
-
-// Decomposed from installing/installing_ibm_cloud/configuring-iam-ibm-cloud.adoc
-// context borrowed from installing/installing_ibm_cloud/configuring-iam-ibm-cloud.adoc
-// so that the ifeval block in alternatives-to-storing-admin-secrets-in-kube-system.adoc fires
-:context: configuring-iam-ibm-cloud
-include::modules/alternatives-to-storing-admin-secrets-in-kube-system.adoc[leveloffset=+1]
-include::modules/cco-ccoctl-configuring.adoc[leveloffset=+1]
 :context: configure-an-ibm-cloud-account-for-installation

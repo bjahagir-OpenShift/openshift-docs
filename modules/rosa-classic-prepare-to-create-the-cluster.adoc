@@ -1,0 +1,16 @@
+// Module included in the following assemblies:
+//
+// * maps/hcm-jobs/rosa-classic-prepare-to-create-the-cluster.adoc
+
+:_mod-docs-content-type: CONCEPT
+[id="rosa-classic-prepare-to-create-the-cluster_{context}"]
+= Prepare to create the cluster
+
+[role="_abstract"]
+As a cluster administrator, prepare your environment before you create a {product-title} cluster. When you complete the prerequisites in advance, your command-line tools, Amazon Web Services (AWS) account, network, and AWS Identity and Access Management (IAM) roles are ready for the cluster creation workflow.
+
+Preparing before you create a cluster helps you to do the following:
+
+* Confirm that your AWS account meets the infrastructure and quota requirements.
+* Install the tools and configure the credentials that the cluster creation workflow requires.
+* Create the IAM and OpenID Connect (OIDC) resources that a Security Token Service (STS) cluster needs.

@@ -6,7 +6,8 @@
 [id="nw-ingress-operator-logs_{context}"]
 = View Ingress Controller logs
 
-You can view your Ingress Controller logs.
+[role="_abstract"]
+You can view your Ingress Controller logs by using the `oc logs` command.
 
 .Procedure
 

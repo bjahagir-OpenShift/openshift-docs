@@ -3,7 +3,7 @@
 // * rosa_hcp/rosa-hcp-aws-private-creating-cluster.adoc
 :_mod-docs-content-type: PROCEDURE
 [id="rosa-hcp-aws-private-create-cluster_{context}"]
-= Creating a private {product-title} cluster using the ROSA CLI
+= Create a private {product-title} cluster using the ROSA CLI
 
 [role="_abstract"]
 You can create a private cluster with multiple availability zones (Multi-AZ) on {product-title} using the ROSA command-line interface (CLI), `rosa`.
@@ -27,14 +27,14 @@ If you use a firewall, you must configure it so that ROSA can access the sites t
 For more information, see the "AWS PrivateLink firewall prerequisites" section.
 ====
 
-. Create the account-wide IAM roles by running the following command:
+. Create the account-wide Identity and Access Management (IAM) roles by running the following command:
 +
 [source,terminal]
 ----
 $ rosa create account-roles --hosted-cp
 ----
 
-. Create the OIDC configuration by running the following command:
+. Create the OpenID Connect (OIDC) configuration by running the following command:
 +
 [source,terminal]
 ----

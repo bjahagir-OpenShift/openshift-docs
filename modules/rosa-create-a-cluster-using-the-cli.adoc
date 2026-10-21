@@ -1,0 +1,12 @@
+// Module included in the following assemblies:
+//
+// * maps/hcm-jobs/rosa-hcp-create-a-cluster-using-the-cli.adoc
+
+:_mod-docs-content-type: CONCEPT
+[id="rosa-hcp-create-a-cluster-using-the-cli_{context}"]
+= Create a cluster using the CLI
+
+[role="_abstract"]
+Create a {product-title} cluster with the default options by using the {rosa-cli-first}.
+
+After you prepare your AWS account, you can create a {product-title} cluster from the command line. The {rosa-cli-first} is the fastest way to create a cluster with the default configuration, and it gives you repeatable, scriptable control over the settings of the cluster.

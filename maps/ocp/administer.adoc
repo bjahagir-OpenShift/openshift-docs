@@ -2,19 +2,35 @@
 
 = Administer
 
+include::ocp-jobs/configure-default-pod-behavior.adoc[leveloffset=+1]
+
+include::ocp-jobs/allocate-gpu-resources-to-pods.adoc[leveloffset=+1]
+
+include::ocp-jobs/allocate-gpus-to-pods-with-a-dra-driver.adoc[leveloffset=+1]
+
 include::ocp-jobs/allocate-resources-for-nodes.adoc[leveloffset=+1]
 
+include::ocp-jobs/allow-containers-to-consume-api-objects.adoc[leveloffset=+1]
+
 include::ocp-jobs/change-the-core-user-password-for-node-access.adoc[leveloffset=+1]
+
+include::ocp-jobs/spread-the-control-plane-across-failure-domains.adoc[leveloffset=+1]
 
 include::ocp-jobs/configure-multi-architecture-node-workload-deployments.adoc[leveloffset=+1]
 
 include::ocp-jobs/configure-my-cluster-to-automatically-update-the-boot-image-on-my-nodes.adoc[leveloffset=+1]
 
+include::ocp-jobs/update-the-boot-image-manually.adoc[leveloffset=+1]
+
 include::ocp-jobs/configure-the-core-user-password-for-node-access.adoc[leveloffset=+1]
 
 include::ocp-jobs/create-a-machine-health-check-resource.adoc[leveloffset=+1]
 
+include::ocp-jobs/create-remote-worker-nodes.adoc[leveloffset=+1]
+
 include::ocp-jobs/define-disruptive-machine-configuration-changes.adoc[leveloffset=+1]
+
+include::ocp-jobs/delete-a-hosted-cluster.adoc[leveloffset=+1]
 
 include::ocp-jobs/delete-nodes-from-a-cluster.adoc[leveloffset=+1]
 
@@ -22,13 +38,31 @@ include::ocp-jobs/deploy-machine-health-checks.adoc[leveloffset=+1]
 
 include::ocp-jobs/enable-features-with-feature-gates.adoc[leveloffset=+1]
 
+include::ocp-jobs/enable-or-disable-the-hosted-control-planes-feature.adoc[leveloffset=+1]
+
 include::ocp-jobs/import-manifest-lists-in-image-streams.adoc[leveloffset=+1]
 
+include::ocp-jobs/manage-bare-metal-host-lifecycle-manage-hosts-and-monitor-hardware-events.adoc[leveloffset=+1]
+
 include::ocp-jobs/manage-bare-metal-host-lifecycle.adoc[leveloffset=+1]
+
+include::ocp-jobs/manage-kernel-modules-across-cluster-nodes-manage-day-1-kmod-images-lifecycle.adoc[leveloffset=+1]
 
 include::ocp-jobs/manage-kernel-modules-across-cluster-nodes-unload-kernel-modules-from-nodes.adoc[leveloffset=+1]
 
 include::ocp-jobs/manage-kernel-modules-across-cluster-nodes-use-kmm-in-hub-and-spoke-multi-cluster.adoc[leveloffset=+1]
+
+include::ocp-jobs/manage-multiple-telco-clusters-with-rhacm.adoc[leveloffset=+1]
+
+include::ocp-jobs/manage-the-configuration-and-lifecycle-of-control-plane-machines.adoc[leveloffset=+1]
+
+include::ocp-jobs/migrate-control-plane-nodes-between-rhosp-hosts.adoc[leveloffset=+1]
+
+include::ocp-jobs/manage-the-configuration-and-lifecycle-of-compute-machines.adoc[leveloffset=+1]
+
+include::ocp-jobs/identify-and-group-compute-machines.adoc[leveloffset=+1]
+
+include::ocp-jobs/identify-and-group-control-plane-machines.adoc[leveloffset=+1]
 
 include::ocp-jobs/manage-workloads-on-multi-architecture-clusters.adoc[leveloffset=+1]
 
@@ -39,6 +73,8 @@ include::ocp-jobs/mount-an-oci-image-onto-a-pod.adoc[leveloffset=+1]
 include::ocp-jobs/mount-persistant-storage-volumes-to-pods-and-containers.adoc[leveloffset=+1]
 
 include::ocp-jobs/perform-lightweight-tasks-with-init-containers.adoc[leveloffset=+1]
+
+include::ocp-jobs/prepare-your-cluster-for-day-2-support.adoc[leveloffset=+1]
 
 include::ocp-jobs/prevent-my-cluster-from-automatically-updating-the-boot-image-on-my-nodes.adoc[leveloffset=+1]
 
@@ -54,11 +90,33 @@ include::ocp-jobs/run-tasks-in-pods.adoc[leveloffset=+1]
 
 include::ocp-jobs/scale-a-compute-machine-set.adoc[leveloffset=+1]
 
+include::ocp-jobs/scale-machines-that-use-static-ip-addresses.adoc[leveloffset=+1]
+
+include::ocp-jobs/reboot-a-node-without-disrupting-workloads.adoc[leveloffset=+1]
+
+include::ocp-jobs/scale-etcd-control-plane-nodes.adoc[leveloffset=+1]
+
+include::ocp-jobs/scale-workloads-in-a-hosted-cluster.adoc[leveloffset=+1]
+
+include::ocp-jobs/manage-hosted-clusters-on-bare-metal.adoc[leveloffset=+1]
+
+include::ocp-jobs/manage-hosted-clusters-on-openshift-virtualization.adoc[leveloffset=+1]
+
+include::ocp-jobs/manage-hosted-clusters-on-aws.adoc[leveloffset=+1]
+
+include::ocp-jobs/manage-hosted-clusters-on-ibm-power.adoc[leveloffset=+1]
+
+include::ocp-jobs/manage-hosted-clusters-on-non-bare-metal.adoc[leveloffset=+1]
+
+include::ocp-jobs/manage-hosted-clusters-on-openstack.adoc[leveloffset=+1]
+
 include::ocp-jobs/schedule-workloads-on-multi-architecture-clusters.adoc[leveloffset=+1]
 
 include::ocp-jobs/understand-machine-health-check-behavior.adoc[leveloffset=+1]
 
 include::ocp-jobs/understand-the-machine-lifecycle.adoc[leveloffset=+1]
+
+include::ocp-jobs/understand-the-out-of-cluster-mode-of-the-image-mode-for-openshift-feature.adoc[leveloffset=+1]
 
 include::ocp-jobs/uninstall-the-web-terminal-operator.adoc[leveloffset=+1]
 
@@ -68,4 +126,50 @@ include::ocp-jobs/use-software-and-drivers-not-available-as-rhcos-extensions.ado
 
 include::ocp-jobs/use-the-embedded-web-terminal.adoc[leveloffset=+1]
 
+include::ocp-jobs/view-and-interact-with-machine-config-operator-certificates.adoc[leveloffset=+1]
+
 include::ocp-jobs/view-no-longer-used-machine-config-objects.adoc[leveloffset=+1]
+
+// Former orphans whose Administer parent job maps do not exist yet.
+// Wired at +1 until "Configure cluster-wide image policy",
+// "Orchestrate Cluster Upgrades with TALM", and
+// "Manage Multiple Telco Clusters with RHACM" are built.
+include::ocp-jobs/understand-image-cr-parameters.adoc[leveloffset=+1]
+
+include::ocp-jobs/configure-registry-allowlists-and-blocks.adoc[leveloffset=+1]
+
+include::ocp-jobs/configure-short-name-search-registries.adoc[leveloffset=+1]
+
+include::ocp-jobs/configure-trust-and-mirroring.adoc[leveloffset=+1]
+
+include::ocp-jobs/understand-mco-rollout-behavior.adoc[leveloffset=+1]
+
+include::ocp-jobs/configure-topology-aware-lifecycle-manager.adoc[leveloffset=+1]
+
+include::ocp-jobs/configure-rhacm-for-telco-deployments.adoc[leveloffset=+1]
+
+include::ocp-jobs/protect-application-data-with-oadp.adoc[leveloffset=+1]
+
+// Bare metal scaling and Day-2 tasks (moved from install.adoc)
+include::ocp-jobs/expand-a-bare-metal-cluster.adoc[leveloffset=+1]
+
+include::ocp-jobs/scale-a-upi-cluster-with-the-bare-metal-operator.adoc[leveloffset=+1]
+
+include::ocp-jobs/add-compute-machines-to-a-bare-metal-cluster.adoc[leveloffset=+1]
+
+include::ocp-jobs/add-a-worker-node-with-custom-var-partition-in-aws.adoc[leveloffset=+1]
+
+// Backup and restore tasks (moved from Troubleshoot)
+include::ocp-jobs/backup-and-restore-etcd-data.adoc[leveloffset=+1]
+
+include::ocp-jobs/control-plane-disaster-recovery.adoc[leveloffset=+1]
+
+include::ocp-jobs/replace-healthy-etcd-member.adoc[leveloffset=+1]
+
+include::ocp-jobs/replace-unhealthy-etcd-members.adoc[leveloffset=+1]
+
+include::ocp-jobs/graceful-cluster-restart.adoc[leveloffset=+1]
+
+include::ocp-jobs/graceful-cluster-shutdown.adoc[leveloffset=+1]
+
+include::ocp-jobs/hibernating-cluster.adoc[leveloffset=+1]

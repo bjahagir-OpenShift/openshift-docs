@@ -5,7 +5,7 @@ include::_attributes/attributes-openshift-dedicated.adoc[]
 
 :toc:
 :toclevels: 4
-:product-title: Openshift Dedicated
+:product-title: OpenShift Dedicated
 :openshift-dedicated:
 
 = {product-title}
@@ -14,8 +14,20 @@ include::whats-new.adoc[leveloffset=+1]
 
 include::discover.adoc[leveloffset=+1]
 
+include::plan.adoc[leveloffset=+1]
+
+include::get-started.adoc[leveloffset=+1]
+
 include::install.adoc[leveloffset=+1]
 
 include::upgrade.adoc[leveloffset=+1]
 
 include::observe.adoc[leveloffset=+1]
+
+include::administer.adoc[leveloffset=+1]
+
+include::optimize.adoc[leveloffset=+1]
+
+include::troubleshoot.adoc[leveloffset=+1]
+
+include::configure.adoc[leveloffset=+1]

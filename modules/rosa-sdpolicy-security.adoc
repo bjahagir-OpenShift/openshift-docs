@@ -7,11 +7,12 @@
 [id="rosa-sdpolicy-security_{context}"]
 = Security
 
-This section provides information about the service definition for {product-title} security.
+[role="_abstract"]
+The service definition for {product-title} security covers authentication, encryption, and access controls that protect the cluster and its workloads.
 
 [id="rosa-sdpolicy-auth-provider_{context}"]
 == Authentication provider
-Authentication for the cluster can be configured using either {cluster-manager-url} or cluster creation process or using the ROSA CLI, `rosa`. ROSA is not an identity provider, and all access to the cluster must be managed by the customer as part of their integrated solution. The use of multiple identity providers provisioned at the same time is supported. The following identity providers are supported:
+Authentication for the cluster can be configured using either {cluster-manager-url} or cluster creation process or using the {rosa-cli-first}. {product-title} is not an identity provider, and all access to the cluster must be managed by the customer as part of their integrated solution. The use of multiple identity providers provisioned at the same time is supported. The following identity providers are supported:
 
 - GitHub or GitHub Enterprise
 - GitLab
@@ -22,7 +23,7 @@ Authentication for the cluster can be configured using either {cluster-manager-u
 
 [id="rosa-sdpolicy-privileged-containers_{context}"]
 == Privileged containers
-Privileged containers are available for users with the `cluster-admin` role. Usage of privileged containers as `cluster-admin` is subject to the responsibilities and exclusion notes in the link:https://www.redhat.com/en/about/agreements[Red{nbsp}Hat Enterprise Agreement Appendix 4] (Online Subscription Services).
+Privileged containers are available for users with the `cluster-admin` role. Usage of privileged containers as `cluster-admin` is subject to the responsibilities and exclusion notes in the Red{nbsp}Hat Enterprise Agreement Appendix 4, linked in the _Additional resources_.
 
 [id="rosa-sdpolicy-customer-admin-user_{context}"]
 == Customer administrator user
@@ -55,11 +56,11 @@ $ oc adm policy add-cluster-role-to-group self-provisioner system:authenticated:
 
 [id="rosa-sdpolicy-regulatory-compliance_{context}"]
 == Regulatory compliance
-See the _Compliance_ table in _Understanding process and security for ROSA_ for the latest compliance information.
+See the _Compliance_ table in "Understanding process and security for {product-title}" for the latest compliance information.
 
 [id="rosa-sdpolicy-network-security_{context}"]
 == Network security
-With {product-title}, AWS provides a standard DDoS protection on all load balancers, called AWS Shield. This provides 95% protection against most commonly used level 3 and 4 attacks on all the public facing load balancers used for ROSA. A 10-second timeout is added for HTTP requests coming to the `haproxy` router to receive a response or the connection is closed to provide additional protection.
+With {product-title}, AWS provides a standard DDoS protection on all load balancers, called AWS Shield. This provides 95% protection against most commonly used level 3 and 4 attacks on all the public facing load balancers used for {product-title}. A 10-second timeout is added for HTTP requests coming to the `haproxy` router to receive a response or the connection is closed to provide additional protection.
 
 [id="rosa-sdpolicy-etcd-encryption_{context}"]
 == etcd encryption
@@ -69,10 +70,10 @@ In {product-title}, the control plane storage is encrypted at rest by default, i
 ifdef::openshift-rosa-hcp[]
 Customers can also opt to encrypt the etcd database at build time or provide their own custom AWS KMS keys for the purpose of encrypting the etcd database.
 
-Etcd encryption will encrypt the following Kubernetes API server and OpenShift API server resources:
+Etcd encryption will encrypt the following Kubernetes API server and {OCP-short} API server resources:
 endif::openshift-rosa-hcp[]
 ifndef::openshift-rosa-hcp[]
-You can also enable etcd encryption, which encrypts the key values in etcd, but not the keys. If you enable etcd encryption, the following Kubernetes API server and OpenShift API server resources are encrypted:
+You can also enable etcd encryption, which encrypts the key values in etcd, but not the keys. If you enable etcd encryption, the following Kubernetes API server and {OCP-short} API server resources are encrypted:
 endif::openshift-rosa-hcp[]
 
 * Secrets

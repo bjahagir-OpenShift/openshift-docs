@@ -1,0 +1,19 @@
+// Module included in the following assemblies:
+//
+// * maps/hcm-jobs/rosa-hcp-collect-and-analyze-logs.adoc
+// * maps/hcm-jobs/rosa-classic-collect-and-analyze-logs.adoc
+// * maps/hcm-jobs/rosa-osd-collect-and-analyze-logs.adoc
+
+:_mod-docs-content-type: REFERENCE
+[id="sd-collect-and-analyze-logs_{context}"]
+= Collect and analyze application and infrastructure logs
+
+[role="_abstract"]
+You can deploy {logging} on your {product-title} cluster to collect and aggregate node system audit logs, application container logs, and infrastructure logs.
+
+You can use {logging} to perform the following tasks:
+
+* Forward logs to your chosen log outputs, including on-cluster, Red{nbsp}Hat managed log storage.
+* Visualize your log data in the {product-title} web console.
+
+Because {logging} releases on a different cadence from {product-title}, the {logging} documentation is available as a separate documentation set at link:https://docs.redhat.com/en/documentation/red_hat_openshift_logging/[Red{nbsp}Hat {OCP-short} {logging-uc}].

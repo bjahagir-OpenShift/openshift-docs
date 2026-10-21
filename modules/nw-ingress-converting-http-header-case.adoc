@@ -6,7 +6,9 @@
 [id="nw-ingress-converting-http-header-case_{context}"]
 = Convert HTTP header case
 
-HAProxy lowercases HTTP header names by default; for example, changing `Host: xyz.com` to `host: xyz.com`. If legacy applications are sensitive to the capitalization of HTTP header names, use the Ingress Controller `spec.httpHeaders.headerNameCaseAdjustments` API field for a solution to accommodate legacy applications until they can be fixed.
+
+[role="_abstract"]
+To keep HTTP header name capitalization for applications that require it in {product-title}, you can configure header name case adjustments on an Ingress Controller.
 
 [IMPORTANT]
 ====
@@ -40,12 +42,13 @@ apiVersion: route.openshift.io/v1
 kind: Route
 metadata:
   annotations:
-    haproxy.router.openshift.io/h1-adjust-case: true <1>
+    haproxy.router.openshift.io/h1-adjust-case: true
   name: <application_name>
   namespace: <application_name>
 # ...
 ----
-<1> Set `haproxy.router.openshift.io/h1-adjust-case` so that the Ingress Controller can adjust the `host` request header as specified. 
++
+You must set `haproxy.router.openshift.io/h1-adjust-case` to `true` so that the Ingress Controller can adjust the `host` request header as specified.
 
 * Specify adjustments by configuring the `HeaderNameCaseAdjustments` field in the Ingress Controller YAML configuration file.
 
@@ -74,7 +77,7 @@ apiVersion: route.openshift.io/v1
 kind: Route
 metadata:
   annotations:
-    haproxy.router.openshift.io/h1-adjust-case: true <1>
+    haproxy.router.openshift.io/h1-adjust-case: true
   name: my-application
   namespace: my-application
 spec:
@@ -82,4 +85,5 @@ spec:
     kind: Service
     name: my-application
 ----
-<1> Set `haproxy.router.openshift.io/h1-adjust-case` to true.
++
+Set `haproxy.router.openshift.io/h1-adjust-case` to `true`.

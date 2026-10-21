@@ -1,0 +1,12 @@
+:_mod-docs-content-type: MAP
+:context: enable-dedicated-resources-and-huge-pages
+
+include::modules/virt-enable-dedicated-resources-and-huge-pages.adoc[leveloffset=+0]
+
+// include::modules/what-huge-pages-do.adoc[leveloffset=+1]
+
+include::modules/virt-configuring-huge-pages-for-vms.adoc[leveloffset=+1]
+
+// include::modules/virt-about-dedicated-resources.adoc[leveloffset=+1]
+
+include::modules/virt-enabling-dedicated-resources.adoc[leveloffset=+1]

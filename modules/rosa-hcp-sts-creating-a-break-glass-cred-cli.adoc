@@ -5,7 +5,7 @@
 
 :_mod-docs-content-type: PROCEDURE
 [id="rosa-hcp-sts-creating-a-break-glass-cred-cli_{context}"]
-= Creating a break glass credential for a {product-title} cluster
+= Create a break glass credential for a {product-title} cluster
 
 [role="_abstract"]
 You can create a break glass credential to generate temporary cluster-admin credentials for {product-title} clusters that use custom OIDC token issuers. The break glass credential provides a `kubeconfig` file that you can use to access the cluster.
@@ -27,7 +27,7 @@ You can create a break glass credential to generate temporary cluster-admin cred
 $ rosa create break-glass-credential -c <cluster_name> -i
 ----
 +
-This command starts an interactive CLI process:
+This command starts an interactive command-line interface (CLI) process:
 +
 [source,terminal]
 ----

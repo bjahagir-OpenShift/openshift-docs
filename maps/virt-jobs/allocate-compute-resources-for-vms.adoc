@@ -1,0 +1,12 @@
+:_mod-docs-content-type: MAP
+:context: allocate-compute-resources-for-vms
+
+include::modules/virt-allocate-compute-resources-for-vms.adoc[leveloffset=+0]
+
+include::modules/virt-CPU-manager-policy.adoc[leveloffset=+1]
+
+include::modules/virt-enabling-multi-queue.adoc[leveloffset=+1]
+
+include::modules/virt-configuring-tune-rate-limit.adoc[leveloffset=+1]
+
+include::modules/virt-setting-cpu-allocation-ratio.adoc[leveloffset=+1]

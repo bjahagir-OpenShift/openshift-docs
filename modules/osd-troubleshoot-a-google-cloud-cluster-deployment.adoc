@@ -1,0 +1,15 @@
+// Module included in the following assemblies:
+//
+// * maps/hcm-jobs/osd-troubleshoot-a-google-cloud-cluster-deployment.adoc
+
+:_mod-docs-content-type: CONCEPT
+[id="osd-troubleshoot-a-google-cloud-cluster-deployment_{context}"]
+= Troubleshoot an {product-title} on {gcp-full} cluster deployment
+
+[role="_abstract"]
+Cluster administrators need to diagnose and resolve {product-title} on {gcp-full} cluster deployment failures so that their clusters provision successfully.
+
+Troubleshooting cluster deployments helps you:
+
+* *Understand deployment errors*: Interpret error messages and codes to identify their causes and any recommended resolutions.
+* *Unblock provisioning*: Identify and resolve common configuration or quota problems and gather diagnostic information for more complex issues when escalating to Red{nbsp}Hat.

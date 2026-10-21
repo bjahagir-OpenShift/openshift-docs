@@ -9,9 +9,6 @@ toc::[]
 [role="_abstract"]
 With {hcp} on {azure-first}, you can reduce the cost associated with dedicated control-plane node VMs for each cluster. You can provision compute nodes as {azure-short} Virtual Machine Scale sets for dynamic scaling, and ensure credential isolation with per-cluster {azure-short} service principals.
 
-:FeatureName: {hcp-capital} on {azure-short}
-include::snippets/technology-preview.adoc[]
-
 include::modules/hcp-azure-overview.adoc[leveloffset=+1]
 
 [role="_additional-resources"]
@@ -105,6 +102,23 @@ include::modules/hcp-azure-private-access.adoc[leveloffset=+2]
 * xref:../../hosted_control_planes/hcp-deploy/hcp-deploy-azure.adoc#hcp-azure-private-hosted_hcp-deploy-azure[Creating a private {azure-short} hosted cluster]
 
 include::modules/hcp-azure-private-ts.adoc[leveloffset=+2]
+
+include::modules/hcp-azure-publicprivate.adoc[leveloffset=+1]
+
+include::modules/hcp-azure-publicprivate-shared-ingress-privatelink.adoc[leveloffset=+2]
+
+include::modules/hcp-azure-publicprivate-creating.adoc[leveloffset=+2]
+
+[role="_additional-resources"]
+.Additional resources
+
+* xref:../../hosted_control_planes/hcp-deploy/hcp-deploy-azure.adoc#hcp-azure-private-subnet_hcp-deploy-azure[Preparing a subnet for a private hosted cluster on {azure-short}]
+
+include::modules/hcp-azure-publicprivate-verify.adoc[leveloffset=+2]
+
+include::modules/hcp-azure-topology-transitions.adoc[leveloffset=+2]
+
+include::modules/hcp-azure-private-link-conditions.adoc[leveloffset=+2]
 
 include::modules/hcp-azure-autoscaling.adoc[leveloffset=+1]
 

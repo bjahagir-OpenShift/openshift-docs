@@ -4,46 +4,47 @@
 
 include::ocp-jobs/understand-platform-architecture.adoc[leveloffset=+1]
 
+include::ocp-jobs/understand-nodes-pods-and-containers.adoc[leveloffset=+1]
+
 //TODO:
 //Commented out while we determine what to do with subjobs that are categorized
 //in different categories than their parent jobs
 //include::ocp-jobs/understand-networking-architecture.adoc[leveloffset=+1]
 
-include::ocp-jobs/understand-local-storage.adoc[leveloffset=+1]
-
 include::ocp-jobs/evaluate-high-availability-capabilities.adoc[leveloffset=+1]
-
-include::ocp-jobs/review-platform-extensibility-and-development-workflows.adoc[leveloffset=+1]
-
-include::ocp-jobs/understand-openshift-installation-architecture.adoc[leveloffset=+1]
-
-include::ocp-jobs/understand-how-openshift-manages-boot-images-on-my-nodes.adoc[leveloffset=+1]
-
-include::ocp-jobs/understand-how-to-manage-no-longer-used-machine-config-objects.adoc[leveloffset=+1]
 
 include::ocp-jobs/understand-container-images-in-openshift.adoc[leveloffset=+1]
 
 include::ocp-jobs/manage-cluster-sample-image-streams.adoc[leveloffset=+1]
 
+include::ocp-jobs/configure-management-state-and-imports.adoc[leveloffset=+2]
+
+include::ocp-jobs/configure-alternate-or-mirrored-registry.adoc[leveloffset=+2]
+
 include::ocp-jobs/understand-what-the-oc-get-mcp-output-means.adoc[leveloffset=+1]
 
 include::ocp-jobs/understanding-how-to-customize-the-kernel-behavior-on-my-nodes-to-meet-specific-needs.adoc[leveloffset=+1]
 
-include::ocp-jobs/delete-kubeletconfig-objects-from-my-cluster.adoc[leveloffset=+1]
-
-include::ocp-jobs/delete-containerruntimeconfig-objects-from-my-cluster.adoc[leveloffset=+1]
-
 include::ocp-jobs/understand-the-on-cluster-mode-of-the-image-mode-for-openshift-feature.adoc[leveloffset=+1]
 
-include::ocp-jobs/understand-how-to-update-a-cluster-that-uses-the-image-mode-for-openshift.adoc[leveloffset=+1]
-
-include::ocp-jobs/network-observability-deployment-and-management.adoc[leveloffset=+1]
+// Moved to networking.adoc
+//include::ocp-jobs/understand-network-observability-netobserv.adoc[leveloffset=+1]
+//
+//include::ocp-jobs/network-observability-deployment-and-management.adoc[leveloffset=+1]
+//
+//include::ocp-jobs/optimize-collection-performance-and-resource-usage.adoc[leveloffset=+2]
+//
+//include::ocp-jobs/scale-components-based-on-cluster-size.adoc[leveloffset=+2]
+//
+//include::ocp-jobs/configure-prometheus-metrics-collection.adoc[leveloffset=+2]
 
 include::ocp-jobs/evaluate-openshift-platform-capabilities.adoc[leveloffset=+1]
 
 include::ocp-jobs/compare-openshift-editions.adoc[leveloffset=+1]
 
 include::ocp-jobs/compare-openshift-deployment-models.adoc[leveloffset=+1]
+
+include::ocp-jobs/hosted-control-planes.adoc[leveloffset=+1]
 
 //TODO:
 //Commented out while we determine what to do with subjobs that are categorized
@@ -54,3 +55,6 @@ include::ocp-jobs/compare-openshift-deployment-models.adoc[leveloffset=+1]
 //Commented out while we determine what to do with subjobs that are categorized
 //in different categories than their parent jobs
 //include::ocp-jobs/choose-registry-storage-for-your-platform.adoc[leveloffset=+1]
+
+// Michael Peter: Cluster Operators reference migration
+include::ocp-jobs/review-cluster-operators.adoc[leveloffset=+1]

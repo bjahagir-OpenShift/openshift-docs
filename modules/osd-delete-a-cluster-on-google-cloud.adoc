@@ -1,0 +1,10 @@
+// Module included in the following assemblies:
+//
+// * maps/hcm-jobs/osd-delete-a-cluster-on-google-cloud.adoc
+
+:_mod-docs-content-type: CONCEPT
+[id="osd-delete-a-cluster-on-google-cloud_{context}"]
+= Delete an OSD cluster on {GCP}
+
+[role="_abstract"]
+When you no longer need an {product-title} cluster on {GCP}, delete it and release the {GCP} resources that it used. Deleting the cluster through the supported workflow ensures that the service removes the resources that it provisioned.

@@ -39,6 +39,8 @@ include::modules/creating-manifest-file-customized-br-ex-bridge.adoc[leveloffset
 [role="_additional-resources"]
 .Additional resources
 
+* xref:../../../installing/install_config/installing-customizing.adoc#installation-special-config-butane-create_installing-customizing[Creating a MachineConfig object by using Butane]
+
 * xref:../../../networking/ovn_kubernetes_network_provider/converting-to-dual-stack.adoc#nw-dual-stack-convert_converting-to-dual-stack[Converting to a dual-stack cluster network]
 
 * xref:../../../installing/installing_bare_metal/bare-metal-expanding-the-cluster.adoc#bare-metal-expanding-the-cluster[Expanding the cluster]
@@ -96,7 +98,8 @@ include::modules/ipi-install-bmc-addressing.adoc[leveloffset=+2]
 [role="_additional-resources"]
 .Additional resources
 
-* xref:../../../vcp/vcp-overview.adoc#vcp-overview[Understanding virtualized control planes]
+* xref:../../../vcp/vcp-overview.adoc#vcp-overview[Virtualized control planes]
+
 * xref:../../../installing/installing_bare_metal/bare-metal-postinstallation-configuration.adoc#bmo-editing-a-baremetalhost-resource_bare-metal-postinstallation-configuration[Editing a BareMetalHost resource]
 
 // Verifying support for the Redfish API

@@ -6,7 +6,11 @@
 include::modules/nw-metallb-layer2.adoc[leveloffset=+0]
 
 // Decomposed from networking/networking_operators/metallb-operator/about-metallb.adoc
+include::modules/nw-metallb-extern-traffic-pol.adoc[leveloffset=+1]
+
 include::modules/nw-metallb-layer2-limitations.adoc[leveloffset=+1]
+
+include::modules/nw-metallb-infra-considerations.adoc[leveloffset=+2]
 
 // Decomposed from networking/ingress_load_balancing/metallb/metallb-configure-address-pools.adoc
 include::modules/nw-metallb-addresspool-cr.adoc[leveloffset=+1]
@@ -34,6 +38,9 @@ include::modules/request-specific-ip-address.adoc[leveloffset=+1]
 include::modules/request-ip-address-from-pool.adoc[leveloffset=+1]
 
 include::modules/accept-any-ip-address.adoc[leveloffset=+1]
+
+// Decomposed from networking/ingress_load_balancing/metallb/about-advertising-ipaddresspool.adoc
+include::modules/nw-metallb-configure-secondary-interface.adoc[leveloffset=+1]
 
 include::modules/share-specific-ip-address.adoc[leveloffset=+1]
 
